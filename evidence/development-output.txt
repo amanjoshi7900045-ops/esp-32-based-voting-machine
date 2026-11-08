@@ -1,0 +1,26 @@
+ESP32 EVM development output (transcribed from the user's shared logs)
+
+I2C scanner:
+I2C Scanner Started
+Scan complete
+
+No I2C address was printed by the scanner.
+
+Main sketch compile:
+Compilation completed successfully.
+Sketch size: approximately 296472 bytes (22% of flash).
+Global variables: approximately 23532 bytes (7% of dynamic memory).
+
+Main sketch upload:
+Warning: Failed to communicate with the flash chip,
+read/write operations will fail. Try checking the chip
+connections or removing any other hardware connected to IOs.
+
+Wrote 23488 bytes (15089 compressed) at 0x00001000.
+Verifying written data...
+A fatal error occurred:
+MD5 of file does not match data in flash!
+Failed uploading: uploading error: exit status 2
+
+Interpretation:
+The code compiled, but this upload did not verify successfully. The LCD I2C address was not detected in the scanner run. These results should be stated accurately as prototype limitations.
